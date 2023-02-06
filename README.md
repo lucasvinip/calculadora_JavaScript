@@ -5,8 +5,6 @@
 ## **SOBRE**
 
 - Calculadora com o objetivo de realizar calculos matemáticos (SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR).
-- Neste momento, estou estudando back-end e fazendo programinhas simples. 
-   Venha comigo e acompanhe meu processo!
 
 ## **TECNOLOGIAS APLICADAS**
 
