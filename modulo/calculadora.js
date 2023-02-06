@@ -12,32 +12,54 @@ function calcular(numero1, numero2, tipoCalc) {
     let operação = tipoCalc.toUpperCase();
 
     let resultado;
+    let status = true; // Varievel booleana para identificar o sttaus do calculo
 
-    if (operação == 'SOMAR')
-        resultado = valor1 + valor2;
-    else if (operação == 'SUBTRAIR')
-        resultado = valor1 - valor2;
-    else if (operação == 'MULTIPLICAR')
-        resultado = valor1 * valor2;
-    else if (operação == 'DIVIDIR') {
-        // Validaçao da divisão por 0
-        if (valor2 == 0) {
-            console.log('ERRO: Não é possivel fazer uma divisão por 0.');
-            entradaDados.close();
-        }
-        else
-            resultado = valor1 / valor2;
-    }
-    else {
-        console.log('ERRO: A operação informada não é válida. Confira a sua entrada');
-        entradaDados.close(); // fecha o objeto da entrada de dados(encerra o programa)
-    }
+    // if (operação == 'SOMAR')
+    //    
+    // else if (operação == 'SUBTRAIR')
+    //     
+    // else if (operação == 'MULTIPLICAR')
+    //     
+    // else if (operação == 'DIVIDIR') {
+    //     
+    // }
+    // else {
+    //     console.log('ERRO: A operação informada não é válida. Confira a sua entrada');
+    //     //entradaDados.close(); // fecha o objeto da entrada de dados(encerra o programa)
+    //     status = false;
+    // }
+
+    switch (operação) {
+        case 'SOMAR':
+            resultado = valor1 + valor2;
+            break;
+
+        case 'SUBTRAIR':
+            resultado = valor1 - valor2;
+            break;
+
+        case 'MULTIPLICAR':
+            resultado = valor1 * valor2;
+            break;
+
+        case 'DIVIDIR':
+            //Validaçao da divisão por 0
+            if (valor2 == 0) {
+                console.log('ERRO: Não é possivel fazer uma divisão por 0.');
+                //entradaDados.close();
+                status = false;
+            }
+            else
+                resultado = valor1 / valor2;
+            break
+
+    } 
 
     // Validaçao para tratar a variavel resultado quando nenhum calculo é realizado
     if (resultado != undefined)
         return resultado;
     else
-        return false;
+        return status;
 };
 
 

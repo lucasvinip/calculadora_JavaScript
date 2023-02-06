@@ -1,6 +1,6 @@
 # JAVASCRIPT - CALCULADORA
 
-![](https://www.muylinux.com/wp-content/uploads/2022/04/nodejs.png)
+![](./img/foto.png)
 
 ## **SOBRE**
 

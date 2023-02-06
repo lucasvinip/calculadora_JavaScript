@@ -5,7 +5,7 @@
     - Versão: 1.1
 */
 
-// import de outro arquivo
+// import de outro arquivo (criado por nos)
 var matematica = require('./modulo/calculadora.js');
 
 // Import da biblioteca para entrada de dados
@@ -56,8 +56,14 @@ entradaDados.question('Valor1: \n', function (numero1) {
                 }
                 else {
                     resultado = matematica.calcular(valor1, valor2, operação);
-                    console.log(resultado);
-                    entradaDados.close();
+                    if (resultado == false) 
+                        entradaDados.close();
+                    else {
+                        console.log(resultado);
+                        entradaDados.close();
+                    }
+                        ;
+                    
                 }
             });
     });
