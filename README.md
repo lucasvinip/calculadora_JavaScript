@@ -2,8 +2,6 @@
 
 ![](./img/foto.png)
 
-![](./img/foto.png)
-
 ## **SOBRE**
 
 - Calculadora com o objetivo de realizar calculos matemáticos (SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR).
