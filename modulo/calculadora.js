@@ -4,40 +4,32 @@
  * Versão: 1.1
 */
 
-//Realizar calculo matemático das 4 operações (SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR)
-function calcular(numero1, numero2, tipoCalc) {
+/* Forma 1 de se criar uma função em JS
+Realizar calculo matemático das 4 operações (SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR)
+ function calcular(numero1, numero2, tipoCalc) {
+};
+*/
 
+//Forma 2 de se criar uma função em JS
+const calcular = function(numero1, numero2, tipoCalc) {
     let valor1 = Number(numero1);
     let valor2 = Number(numero2);
     let operação = tipoCalc.toUpperCase();
 
     let resultado;
     let status = true; // Varievel booleana para identificar o sttaus do calculo
-
-    // if (operação == 'SOMAR')
-    //    
-    // else if (operação == 'SUBTRAIR')
-    //     
-    // else if (operação == 'MULTIPLICAR')
-    //     
-    // else if (operação == 'DIVIDIR') {
-    //     
-    // }
-    // else {
-    //    
-    // }
-
+ 
     switch (operação) {
         case 'SOMAR':
-            resultado = valor1 + valor2;
+            resultado = somar(valor1, valor2);
             break;
 
         case 'SUBTRAIR':
-            resultado = valor1 - valor2;
+            resultado = subtrair(valor1, valor2);
             break;
 
         case 'MULTIPLICAR':
-            resultado = valor1 * valor2;
+            resultado = multiplicar(valor1, valor2);
             break;
 
         case 'DIVIDIR':
@@ -48,7 +40,7 @@ function calcular(numero1, numero2, tipoCalc) {
                 status = false;
             }
             else
-                resultado = valor1 / valor2;
+                resultado = dividir(valor1, valor2);
             break
         /*
             Similar ao else finla de uma estrutura baseada em if / else (sse nenhuma das opçoes forem
@@ -65,8 +57,15 @@ function calcular(numero1, numero2, tipoCalc) {
         return resultado;
     else
         return status;
-};
+}
 
+/* Funçao privada, apenas nesse arquivo
+-Forma 3 de se criar uma função em JS (modelo arrow fuction)
+*/  
+const somar       = (valor1, valor2) => Number(valor1) + Number(valor2);
+const subtrair    = (valor1, valor2) => Number(valor1) - Number(valor2);
+const multiplicar = (valor1, valor2) => Number(valor1) * Number(valor2);
+const dividir     = (valor1, valor2) => Number(valor1) / Number(valor2);
 
 // Exporta uma funçao para ser utilizada em outro arquivo
 module.exports = {

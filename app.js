@@ -56,7 +56,7 @@ entradaDados.question('Valor1: \n', function (numero1) {
                 }
                 else {
                     resultado = matematica.calcular(valor1, valor2, operação);
-                    if (resultado == false) 
+                    if (resultado == false && typeof(resultado) == 'boolean') 
                         entradaDados.close();
                     else {
                         console.log(resultado);

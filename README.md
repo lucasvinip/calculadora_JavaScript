@@ -1,6 +1,6 @@
 # JAVASCRIPT - CALCULADORA
 
-![](./img/foto.png), (./img/foto.png)
+![](./img/foto.png)
 
 ## **SOBRE**
 
