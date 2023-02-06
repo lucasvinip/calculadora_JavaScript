@@ -1,10 +1,10 @@
-# JAVASCRIPT - NODE.JS
+# JAVASCRIPT - CALCULADORA
 
 ![](https://www.muylinux.com/wp-content/uploads/2022/04/nodejs.png)
 
 ## **SOBRE**
 
-- Calculadora com o objetivo de realizar calculos matemáticos(SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR).
+- Calculadora com o objetivo de realizar calculos matemáticos (SOMAR, SUBTRAIR, MULTIPLICAR e DIVIDIR).
 
 ## **TECNOLOGIAS APLICADAS**
 
