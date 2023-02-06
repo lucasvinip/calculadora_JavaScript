@@ -24,9 +24,7 @@ function calcular(numero1, numero2, tipoCalc) {
     //     
     // }
     // else {
-    //     console.log('ERRO: A operação informada não é válida. Confira a sua entrada');
-    //     //entradaDados.close(); // fecha o objeto da entrada de dados(encerra o programa)
-    //     status = false;
+    //    
     // }
 
     switch (operação) {
@@ -52,7 +50,14 @@ function calcular(numero1, numero2, tipoCalc) {
             else
                 resultado = valor1 / valor2;
             break
-
+        /*
+            Similar ao else finla de uma estrutura baseada em if / else (sse nenhuma das opçoes forem
+            verdadeiras, sempre passará pelo default//)
+        */
+        default:
+            console.log('ERRO: A operação informada não é válida. Confira a sua entrada');
+                //entradaDados.close(); // fecha o objeto da entrada de dados(encerra o programa)
+                status = false;
     } 
 
     // Validaçao para tratar a variavel resultado quando nenhum calculo é realizado
